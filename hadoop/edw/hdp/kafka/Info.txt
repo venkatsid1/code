@@ -1,0 +1,12 @@
+References:
+================
+  http://hortonworks.com/apache/kafka/
+ 
+ 
+ 
+Q&A
+=========
+
+
+Key Points & Concepts
+=====================
