@@ -20,3 +20,8 @@ publish-subscribe
 
 Rackwareness for resilience and availability 
 Automated Replica leader election
+
+Kafka Security
+  - access to specific topics on an individual or group level
+  - Kerberos based authentication
+  - Granular authorization via Apache Ranger
