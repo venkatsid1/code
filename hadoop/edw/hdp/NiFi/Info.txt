@@ -1,1 +1,12 @@
 
+References:
+================
+  http://hortonworks.com/hadoop-tutorial/realtime-event-processing-nifi-kafka-storm/#section_2
+ 
+ 
+Q&A
+=========
+
+
+Key Points & Concepts
+=====================
