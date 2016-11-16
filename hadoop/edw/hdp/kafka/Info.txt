@@ -10,3 +10,13 @@ Q&A
 
 Key Points & Concepts
 =====================
+Topics, Producers , Consumers, Brokers, Partitions
+
+fast
+scalable
+durable
+fault-tolerant
+publish-subscribe
+
+Rackwareness for resilience and availability 
+Automated Replica leader election
