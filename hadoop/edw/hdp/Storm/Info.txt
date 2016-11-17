@@ -1,5 +1,8 @@
 References:
 ================
+http://hortonworks.com/apache/storm/
+http://storm.apache.org/index.html
+
 http://hortonworks.com/hadoop-tutorial/realtime-event-processing-nifi-kafka-storm/#section_2
  
  
