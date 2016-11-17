@@ -1,7 +1,7 @@
 
 References:
 ================
-  http://hortonworks.com/hadoop-tutorial/realtime-event-processing-nifi-kafka-storm/#section_2
+http://hortonworks.com/hadoop-tutorial/realtime-event-processing-nifi-kafka-storm/#section_2
  
  
 Q&A
@@ -10,6 +10,9 @@ Q&A
 
 Key Points & Concepts
 =====================
+Platform for ingesting real-time data.
+NiFi offers tools to filter undesired data.
+
  FlowFile
  Processor
  Connections
