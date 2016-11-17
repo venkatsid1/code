@@ -10,7 +10,33 @@ Q&A
 
 Key Points & Concepts
 =====================
+Distributed , Reliable, Robust , Fault tolerant
+
+Stream Data
+Insulated Systems - Buffer storage platform from transiet spikes
+Guarantee data delivery
+Scale horizontally
+Flume also supports dynamic reconfiguration without the need for a restart, which reduces downtime for its agents.
+
+
+1.5.2	
+	Apache Kafka Sink
+	Apache Kafka Source
+	Apache Hive Streaming Data Sink
+	Obfuscated Password Handling
+	Apache Flume trunk, used in HDP 2.2	
+	Apache Hive streaming sink
+	
+1.5.0	
+	ElasticSearch/HTTP support
+	Introduction of SpillableChannel
+	
+1.4.0	
+	Implement a JMS source for Flume NG
+	Encrypted transport mechanism
+	Running simple configurations embedded in host process
+
 Agent has 
-  1. source  --- connects to web server... data producing system.
-  2. sink    --- connects to HDFS
-  3. channel
+  1. source  --- Either actively poll for data or passively wait for data to be delivered to them
+  2. sink    --- Enity that delivers the data to the destination
+  3. channel --- Conduit between the source and sink.
