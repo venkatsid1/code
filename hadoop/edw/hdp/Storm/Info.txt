@@ -9,3 +9,12 @@ Q&A
 
 Key Points & Concepts
 =====================
+A storm cluster has three sets of nodes:
+
+1. Nimbus node (master node, similar to the Hadoop JobTracker):
+     Uploads computations for execution
+     Distributes code across the cluster
+     Launches workers across the cluster
+     Monitors computation and reallocates workers as needed
+2. ZooKeeper nodes – coordinates the Storm cluster
+3. Supervisor nodes – communicates with Nimbus through Zookeeper, starts and stops workers according to signals from Nimbus
