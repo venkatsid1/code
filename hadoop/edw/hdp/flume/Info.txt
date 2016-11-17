@@ -10,3 +10,7 @@ Q&A
 
 Key Points & Concepts
 =====================
+Agent has 
+  1. source  --- connects to web server... data producing system.
+  2. sink    --- connects to HDFS
+  3. channel
