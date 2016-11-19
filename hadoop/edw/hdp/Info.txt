@@ -1,0 +1,20 @@
+Quick Links
+==============
+Ambari - http://40.86.90.47:8080/#/main/dashboard/metrics
+Web Shell - http://40.86.90.47:4200/
+Zeppelin - http://40.86.90.47:9995/#/
+
+
+References
+====================
+
+
+
+Q&A
+====
+
+
+
+
+Key Points & Buzz words
+==========================
