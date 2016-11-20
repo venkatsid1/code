@@ -4,6 +4,7 @@ http://spark.apache.org/docs/latest/quick-start.html
 http://scala-ide.org
 winutils.exe - to disguise spark about hadoop
 grouplens.org - for sample data
+http://media.sundog-soft.com/SparkScala/SparkScala.zip  --- samples of udemy
  
 Q&A
 =========
