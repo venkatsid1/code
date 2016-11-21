@@ -1,0 +1,8 @@
+What is Scala
+  Functional Programming
+  New features in Spark are first in scala
+  Runs on top of JVM. Can use Java classes 
+  Spark programs can be written in Java or Python
+  
+val - immutable
+var - mutable 
