@@ -1,11 +1,23 @@
 Extras:
 ===============
-Netteza
+IDAA Netteza  --- 
 Log Master --- goes through log archieve  
 
 
 Project
 =================
+db2 --> staging data -- surrogate keys -->
+
+sqoop --> nightly 500 million records -- 10 GB --- 4hrs
+   client data  --- monthly
+   demographic =  6 monthly
+   equi
+   
+   un-adultrated data  
+   
+   data cleaned is and stored hive is called un-adultrated.
+   
+
 
 
 
