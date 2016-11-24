@@ -12,3 +12,30 @@ Q&A
 
 Key Points & Buzz words
 =====================
+10 times and 100 times faster due to optimized workflow of  DAG Engine - Directed Acyclic Graph
+RDD - Resilient Distributed Dataset
+Spark itself is written in Scala
+Scala's functional programming model is a good fit for distributed processing
+
+Creating RDDs
+ val nums = parallelzie(List(1,2,3,4))
+ sc.textFile("file:///c:/user.txt")  or s3n:// , hdfs://
+ hiveCtx = HiveContext(sc)
+     rows = hiveCtx.sql("select name, age from users")
+Can also create from:
+ JDBC
+ Cassandra
+ HBase
+ Elastisearch
+ JSON,CSV,sequence files, object files, various compressed formats
+
+RDD Actions
+  collect
+  count
+  countByValue
+  take
+  top
+  reduce
+  ...
+  
+ 
