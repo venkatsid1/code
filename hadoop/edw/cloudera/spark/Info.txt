@@ -40,5 +40,9 @@ RDD Actions
 map vs flatMap
 NLTK - Natural Language Toolkit
 
+sc.broadcast() -- to ship off whatever you want
+sc.value() to get the Object back
+
+
 
  
