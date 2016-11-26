@@ -43,6 +43,7 @@ NLTK - Natural Language Toolkit
 sc.broadcast() -- to ship off whatever you want
 sc.value() to get the Object back
 
+Item based collaborative filtering
 
 
  
