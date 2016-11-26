@@ -45,5 +45,8 @@ sc.value() to get the Object back
 
 Item based collaborative filtering
 
+cache vs persist - to store rdd in-memory or not to re-build
 
+running spark program on cluster
+spark-submit -class<full package with class>  --jars <dependent jars> --files <files you want to be with your prog> <actual jar file>
  
