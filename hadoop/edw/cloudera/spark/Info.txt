@@ -49,4 +49,30 @@ cache vs persist - to store rdd in-memory or not to re-build
 
 running spark program on cluster
 spark-submit -class<full package with class>  --jars <dependent jars> --files <files you want to be with your prog> <actual jar file>
- 
+
+--- SPARK SQL --
+SparkSession
+
+DataFrame 
+ - Contain Row(DataSet) objects
+ - Can run SQL queries
+ - Has a schema (leading to more efficient storage)
+ - Read and write to JSON , Hive, parquet
+ - Communicates with JDBC/ODBC, Tableau
+
+import spark.implicits._
+val movieDS = linesRdd.toDS()  ---> this converts the rdd to dataset
+
+
+
+----- SPARK MLLIB------
+MLLIB Capabilities
+ Feature extraction
+ Basic statistics
+ Linear regression, logistic regression 
+ support vector Machines
+ Naive Bayes classifier
+ Decision tress
+ K-means clustering
+ Principal componentt analysis, singular value decomposition
+ Recommendations using Alternating Least Squares
