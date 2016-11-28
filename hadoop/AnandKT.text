@@ -41,6 +41,11 @@ master ---parque --- columnar data --->
    maintains dictionary 
    gets the data quickly to memory
    
+AVRO vs Parquet 
+     http://www.slideshare.net/StampedeCon/choosing-an-hdfs-data-storage-format-avro-vs-parquet-and-more-stampedecon-2015
+
+     
+   
 RDW - Oracle db 
 ENT - Mainframes db
 NLU - Calls related db
