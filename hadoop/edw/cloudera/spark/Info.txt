@@ -76,3 +76,25 @@ MLLIB Capabilities
  K-means clustering
  Principal componentt analysis, singular value decomposition
  Recommendations using Alternating Least Squares
+
+
+
+---- SPARK STREAMING ----
+Analyzes continual streams of data
+Data is aggregated and analyzed at some given interval
+Can take data fed to some port, Amazon Kinesis , HDFS, Kafka, Flume and others.
+Checkpointing - stores state to disk periodically for fault tolerance.
+
+DStream - collection of distinct RDDs
+val stream = new StreamingContext(conf,Seconds(1))
+val lines = stream.socketTextStream("localhost",8888)
+val errors = lines.filter(_.contains("error"))
+
+kick off the job explicitly :
+ stream.start()
+ stream.awaitTermination()
+
+Windowed Opertaions
+updateStateByKey()
+
+Need a twitter developer account  --- https://apps.twitter.com/
