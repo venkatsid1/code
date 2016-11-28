@@ -21,3 +21,44 @@ sqoop --> nightly 500 million records -- 10 GB --- 4hrs
 
 
 
+date --- Nov 27th
+==========================
+
+Staging -- raw data 
+
+   spark to clean data
+
+ETL ---- AVRO 
+      --- more compatble with lot of platforms and technologies like java, c++
+	  --- HIVE tables are built on it
+	  --- its row format , performance impact so need to have parque format we have another copy in master 
+
+
+archieve  --- ETL successful raw data 
+
+master ---parque --- columnar data ---> 
+   we can get only 10 columns out of 100 
+   maintains dictionary 
+   gets the data quickly to memory
+   
+RDW - Oracle db 
+ENT - Mainframes db
+NLU - Calls related db
+
+
+
+
+sqoop
+  - insert
+  - update
+  - upsert
+  
+
+
+prod - 30 nodes ---
+     - 3 masters
+	 - 
+	 
+scala	 
+	traits  ... abstract
+
