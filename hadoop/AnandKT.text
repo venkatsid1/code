@@ -44,9 +44,11 @@ master ---parque --- columnar data --->
 AVRO vs Parquet 
      http://www.slideshare.net/StampedeCon/choosing-an-hdfs-data-storage-format-avro-vs-parquet-and-more-stampedecon-2015
 
+AVRO to Parquet conversions
+     http://blog.cloudera.com/blog/2015/03/converting-apache-avro-data-to-parquet-format-in-apache-hadoop/
      
    
-RDW - Oracle db 
+RDW - Oracle db  
 ENT - Mainframes db
 NLU - Calls related db
 
@@ -66,4 +68,18 @@ prod - 30 nodes ---
 	 
 scala	 
 	traits  ... abstract
+
+Techonology 
+=============
+  DB  -> Staging ==== sqoop
+  Staging --> ETL ==== Spark/scala, Hive, AVRO format
+  Staging --> Archieve === HDFS put
+  ETL ---> Master  ==== spark/scala , Hive, Parquet format
+  
+  
+  DMart
+  Analytics ===  PySpark, Spark, Hive, SAS
+  
+
+
 
