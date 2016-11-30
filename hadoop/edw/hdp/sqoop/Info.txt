@@ -1,0 +1,10 @@
+References:
+================
+ 
+ 
+Q&A
+=========
+  http://hadooptutorial.info/sqoop-interview-questions-and-answers-for-experienced/
+
+Key Points & Concepts
+=====================
