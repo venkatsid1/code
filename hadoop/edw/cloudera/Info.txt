@@ -1,0 +1,24 @@
+References:
+================
+ 
+ 
+Q&A
+=========
+
+
+
+Key Points & Concepts
+=====================
+
+Connecting to mysql server in cloudera sandbox on a terminal
+  mysql -uroot -pcloudera
+  
+exporting databases from cloudera sandbox
+   mysqldump -uroot -pcloudera --all-databases > clouderadbs.sql
+
+importing databases to hdp sandbox
+  sudo mysql < clouderadbs.sql
+  
+
+  
+  
