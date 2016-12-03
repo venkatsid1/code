@@ -181,6 +181,13 @@ use retail_stage;
 
 CREATE EXTERNAL TABLE categories
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
+STORED AS AVRO
+LOCATION 'hdfs:///user/azure/retail_db_avro/categories'
+TBLPROPERTIES ('avro.schema.url'='hdfs://sandbox.hortonworks.com/user/azure/retail_db_sqoop/categories.avsc');
+
+
+CREATE EXTERNAL TABLE categories
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.avro.AvroSerDe'
 STORED AS INPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerInputFormat'
 OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.avro.AvroContainerOutputFormat'
 LOCATION 'hdfs:///apps/hive/warehouse/retail_stage.db/categories'
