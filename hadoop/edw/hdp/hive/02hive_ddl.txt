@@ -117,6 +117,13 @@ PARTITIONED BY (order_month string)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 STORED AS TEXTFILE;
 
+--- to insert data into above partition table , dynamically.
+insert into table retail_ods.orders partition(order_month)
+select order_id, from_unixtime(cast(substr(order_date,1,10) as bigint)) order_date, order_customer_id ,
+order_status, substr(from_unixtime(cast(substr(order_date,1,10) as bigint)),1,7) order_month from
+retail_stage.orders;
+
+
 CREATE TABLE orders_bucket (
 order_id int,
 order_date string,
@@ -126,6 +133,12 @@ order_status string
 CLUSTERED BY (order_id) INTO 16 BUCKETS
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 STORED AS TEXTFILE;
+
+---- insert into bucket dynamically
+insert into table orders_buckets
+select order_id, from_unixtime(cast(substr(order_date,1,10) as bigint)) order_date,
+order_customer_id, order_status from retail_stage.orders;
+
 
 CREATE TABLE order_items_bucket (
 order_item_id int,
