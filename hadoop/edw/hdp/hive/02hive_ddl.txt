@@ -248,3 +248,65 @@ update_date string
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '|'
 STORED AS TEXTFILE;
+
+-- creating table with CTAS
+create table orders_orc
+row format delimited fields terminated by ':'
+stored as orc
+as
+select * from retails_stage.orders;
+
+--- the above ddl query is same as below, which we used for custom serde
+- -- show create table orders_orc  // will display actual symantecs
+CREATE TABLE `orders_orc`(
+  `order_id` int,
+  `order_date` bigint,
+  `order_customer_id` int,
+  `order_status` string)
+ROW FORMAT DELIMITED
+  FIELDS TERMINATED BY ':'
+STORED AS INPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat'
+OUTPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat'
+LOCATION
+  'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/retail_ods.db/orders_orc'
+TBLPROPERTIES (
+  'COLUMN_STATS_ACCURATE'='true',
+  'numFiles'='1',
+  'numRows'='68883',
+  'rawDataSize'='7508247',
+  'totalSize'='164887',
+  'transient_lastDdlTime'='1480877923')
+  
+ --- typically you don't have mention row format other than text format.
+ create table orders_orc_default_serde (
+    `order_id` int,
+     `order_date` bigint,
+     `order_customer_id` int,
+     `order_status` string)
+    stored as orc;
+
+hive> show create table orders_orc_default_serde;
+
+CREATE TABLE `orders_orc_default_serde`(
+  `order_id` int,
+  `order_date` bigint,
+  `order_customer_id` int,
+  `order_status` string)
+ROW FORMAT SERDE
+  'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+STORED AS INPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.orc.OrcInputFormat'
+OUTPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat'
+LOCATION
+  'hdfs://sandbox.hortonworks.com:8020/apps/hive/warehouse/retail_ods.db/orders_orc_default_serde'
+TBLPROPERTIES (
+  'transient_lastDdlTime'='1480879271')
+Time taken: 0.277 seconds, Fetched: 15 row(s)
+
+
+
+
+
