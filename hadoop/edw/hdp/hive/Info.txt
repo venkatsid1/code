@@ -1,0 +1,88 @@
+References:
+================
+ 
+ 
+Q&A
+=========
+Difference between external and internal tables
+   http://stackoverflow.com/questions/17038414/difference-between-hive-internal-tables-and-external-tables
+warehouse-dir vs target-dir
+What is Managed table vs External table
+Why CTAS does not support partitioning and clustered (bucketing) or skewed.
+
+Bucketing is 1 based???
+
+
+
+
+
+Key Points & Concepts
+=====================
+
+Types of partition in RDBMS - list partitioning, hash partitioning , range partitioning...
+Hive Partition
+ - Partitioning --- similar to list partioning
+         partition column may be part of table.
+         column name needs data type
+ - Bucketing --- similar to has partioning
+         Clustered or Sorted takes column from the table. Does require data type to be mentioned as it is already mentioned table.
+
+hive.exec.dynamic.partition=true  ---> through insert dynamic partition can be done.
+hive.exec.dynamic.partition.mode=nonstrict --> if strict, will throw error if trying to do dynamic partition.
+
+CTAS - Create Table As Select --- creating table with a select query.
+
+hive.execution.engine=mr   or tez
+
+explain ... query --- gives information about the stages and map and reduce tasks.
+
+hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
+
+To have transation behavior table needs to be orc , bucketing ,  tblproperties('transactional'='true'); 
+compaction
+
+tombstone
+Vaccuming
+
+
+--- compression parameters
+
+[azure@sandbox ~]$ hive -e "set;"| grep compress
+Logging initialized using configuration in file:/etc/hive/2.4.0.0-169/0/hive-log4j.properties
+dfs.image.compress=false
+dfs.image.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+hive.exec.orc.compression.strategy=SPEED
+hive.exec.orc.default.compress=ZLIB
+
+core-sites.xml
+    <property>
+      <name>io.compression.codecs</name>
+      <value>org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.SnappyCodec</value>
+    </property>
+
+mapred-sites.xml
+   <property>
+      <name>mapreduce.output.fileoutputformat.compress</name>
+      <value>false</value>
+    </property>
+
+    <property>
+      <name>mapreduce.output.fileoutputformat.compress.type</name>
+      <value>BLOCK</value>
+    </property>
+
+compressed files named as *-deflate
+
+set mapreduce.output.fileoutputformat.compress.codec;
+
+We might need denormalize data - which can be used to get frequent different type of reports on the same set of denormalized data.
+
+
+
+
+
+ 
+ 
+ 
