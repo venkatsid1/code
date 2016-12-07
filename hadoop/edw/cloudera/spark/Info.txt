@@ -12,6 +12,22 @@ Q&A
 
 Key Points & Buzz words
 =====================
+               RDD              Vs       DSM (Distributed Shared Memory)
+  ----------------------------------------------
+Writes ->    Coarse grained             Fine grained
+Recovery->    Lineage                   Check Point
+Consistency--> Trivial                  Up to the application
+  
+Benefits of Spark
+------------------
+1. Fault Recovery
+2. Optimized (using DAG)
+3. Easy Programming
+4. Rich Library/Support (MLIB, GraphX, DataFrames)
+
+
+
+
 10 times and 100 times faster due to optimized workflow of  DAG Engine - Directed Acyclic Graph
 RDD - Resilient Distributed Dataset
 Spark itself is written in Scala
