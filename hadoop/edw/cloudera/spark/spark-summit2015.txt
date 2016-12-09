@@ -1,0 +1,88 @@
+
+
+            NoSQL Battles                           Compute Battles  
+            (then)                                    (now)
+ 
+ Relational vs NoSQL                              MapReduce vs Spark
+ HBase vs Cassandra   (column Family)             Spark Steaming vs Strom
+ Redis vs Memocached vs Riak   (key--> Value)     Hive vs Spark SQL vs Impala
+ MongoDB vs CouchDB vs Couchbase(key --> Doc)     Mahout vs MLib vs H20
+ Neo4j  vs Titan vs Giraph vs OrientDB (Graph)
+ Solr  vs ElasticSearch vs Splunk (Search) 
+ 
+ 
+Spark allows to
+  - Scheduling
+  - Monitoring
+  - Distributing
+  
+
+        Hadoop     vs         Spark
+   -----------------------------------
+      MapReduce               spark
+      YARN                    Mesos
+      HDFS                    Tachyon
+      HIVE                    Spark SQL
+      Mahout                  Spark Mlib
+      Strom                   Spark Streaming
+      
+
+
+      
+       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
