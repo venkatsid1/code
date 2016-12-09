@@ -6,6 +6,35 @@ Log Master --- goes through log archieve
 
 Project
 =================
+
+ 401 plan ---
+ Retail Data ---- consumer Retirement funds
+                   mutual funds
+				   equity  funds
+				   
+ Flagship programs
+  
+ 
+ Predictive models
+    1. Clustered models-- (segmentation)
+    2. Propensity models (predictions)
+	3. Collaborative filtering(Recomendation)
+	
+ click stream analysis
+  --- view event
+  --- click events
+  --- activity events
+    site analysis
+
+
+
+   
+Tell me about your project
+
+1. Data Consumption
+ 
+2. We provide data ---
+
 db2 --> staging data -- surrogate keys -->
 
 sqoop --> nightly 500 million records -- 10 GB --- 4hrs
