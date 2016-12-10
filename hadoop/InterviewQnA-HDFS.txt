@@ -1,0 +1,14 @@
+References
+--------------------
+https://www.dezyre.com/article/top-100-hadoop-interview-questions-and-answers-2016/159
+
+
+Buzz words
+----------------
+
+
+
+
+Imp QnA
+--------------------
+01. What is a block and block scanner in HDFS
