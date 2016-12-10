@@ -5,6 +5,8 @@ https://www.dezyre.com/article/top-100-hadoop-interview-questions-and-answers-20
 
 Buzz words
 ----------------
+Checkpoint node
+fsimage
 
 
 
@@ -12,3 +14,11 @@ Buzz words
 Imp QnA
 --------------------
 01. What is a block and block scanner in HDFS
+
+02. Explain about the process of inter cluster data copying ?
+    $ hadoop distcp hftp://cdh4-namenode:50070/hbase hdfs://CDH5-nameservice/hbase
+    $ hadoop distcp s3://accessKeyid:secretkey@bucket/file hdfs://CDH5-nameservice/bucket/file
+    $ hadoop distcp s3n://accessKeyid:secretkey@bucket/file hdfs://CDH5-nameservice/bucket/file
+    distcp will then submit a regular MapReduce job that performs a file-by-file copy.
+
+03. 
