@@ -71,7 +71,8 @@ Item based collaborative filtering
 
 cache vs persist 
     - to store rdd in-memory or not to re-build. Cache is same as persist with default storage level MEMORY_ONLY.
-    - while with persist rdd can be stored in memory and disk.
+    - while with persist rdd can be stored in memory and disk. Different levels of persistence are MEMORY_ONLY, MEMORY_ONLY_SER, 
+      MEMORY_AND_DISK, MEMORY_AND_DISK_SER, DISK_ONLY.
 
 running spark program on cluster
 spark-submit -class<full package with class>  --jars <dependent jars> --files <files you want to be with your prog> <actual jar file>
@@ -80,7 +81,7 @@ spark-submit -class<full package with class>  --jars <dependent jars> --files <f
 SparkSession
 
 DataFrame 
- - Contain Row(DataSet) objects
+ - Contains Row(DataSet) objects
  - Can run SQL queries
  - Has a schema (leading to more efficient storage)
  - Read and write to JSON , Hive, parquet
