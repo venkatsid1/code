@@ -60,9 +60,18 @@ NLTK - Natural Language Toolkit
 sc.broadcast() -- to ship off whatever you want
 sc.value() to get the Object back
 
+rdd.mapValues(x=>(x,1))
+rdd.reduceByValues((x,y)=>(x._1+y._1,x._2+y._2))
+parsedLinesrdd.filter(x=> x._2=="TMIN") // filtering min temp lines in rdd.
+linesrdd.flatMap(x=>x.split(" "))
+
+
+
 Item based collaborative filtering
 
-cache vs persist - to store rdd in-memory or not to re-build
+cache vs persist 
+    - to store rdd in-memory or not to re-build. Cache is same as persist with default storage level MEMORY_ONLY.
+    - while with persist rdd can be stored in memory and disk.
 
 running spark program on cluster
 spark-submit -class<full package with class>  --jars <dependent jars> --files <files you want to be with your prog> <actual jar file>
