@@ -122,14 +122,41 @@ Technical snippets might be useful
 Project --- QnA
 ================
 
-How much data was received from third party?
-How it was received ? Who are the data providers?
-What is the reason to use scala and spark other than performance ? 
-How much data was processed ? 
-What features of Spark are used in the Project and why?
-Why impala and hive have been used together ?
-How performance tuning was achieved when processing billions of record?
-Was it a one batch job ? Multiple jibs? Hiw was the load distributed across cluster ?
-How were the validatuon rules applied in what platform?
+1. How much data was received from third party?
+   
+   XYZ ????? (share of vallet)
+	a. Quarterly data -- media,  EBS loads the data into shared location (FTP) 
+   	b. 40 GB - Semi-structured data. flat file. (BA Clear --- any third party will send to BA clear).
+   
+   Google Stream
+   	a. Click stream data
+	b. google sends the file DIALY in batch mode.(300 GB) . Google Analytics ?
+	    i. view
+	    ii. click    20 GB
+	    iii. Activity  1GB
+	 Are we placing plain text data into the HDFS or compress data? Spark(1.1)/scala, MR, Pig, Hive has capability to deal with compressed/zip blocks????
+	 Can we have sample goofed data for above scenarios?????
+	 
+	 
+   
+2. How it was received ? Who are the data providers?
+
+   Data like. - 
+    i. Person details
+    ii. zip code, zipcode+4digitcode, agecode (External Demographic data).
+
+3. What is the reason to use scala and spark other than performance ? 
+
+4. How much data was processed ? 
+
+5. What features of Spark are used in the Project and why?
+
+6. Why impala and hive have been used together ?
+
+7. How performance tuning was achieved when processing billions of record?
+
+8. Was it a one batch job ? Multiple jibs? Hiw was the load distributed across cluster ?
+
+9. How were the validatuon rules applied in what platform?
 
 
