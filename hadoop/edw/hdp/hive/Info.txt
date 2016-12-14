@@ -14,7 +14,23 @@ Bucketing is 1 based???
 
 What is correlation between HBase and HCatalog?  
    http://stackoverflow.com/questions/19997749/what-is-correlation-between-hbase-and-hcatalog
-   
+
+Does Hive support indexing? How we can have faster searches?
+
+How do we choose between partition vs bucketing ?
+
+Did you use hive joins? in what scenario ?
+
+can we create schema with primary key ? 
+
+copying schema to other cluster ??
+
+what are challenges you have faced in hive on your data ?
+  1. unit date to hive representation
+  2. Null presentations
+  
+
+
     
 
 
