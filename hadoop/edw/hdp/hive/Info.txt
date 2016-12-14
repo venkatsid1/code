@@ -32,10 +32,8 @@ can we create schema with primary key ?
 
 Static vs Dynamic Partitioning ?
   https://www.altiscale.com/blog/best-practices-for-dynamic-partitioning-in-hive/
-     Hive enforces a limit on the number of dynamic partitions it can create. 
-     The default is 100 dynamic partitions per node, with a total (default) limit of 1000 dynamic partitions across all nodes.
-     However, this setting is configurable. If your job tries to create more partitions than allowed, you may see the following exception:
-
+  
+  
 
 copying schema to other cluster ??
     https://community.hortonworks.com/questions/4496/how-to-migrate-hive-data-over-to-new-cluster.html
@@ -124,7 +122,12 @@ set mapreduce.output.fileoutputformat.compress.codec;
 We might need denormalize data - which can be used to get frequent different type of reports on the same set of denormalized data.
 
 
-
+SET hive.exec.dynamic.partition=true;
+SET hive.exec.max.dynamic.partitions=2048;
+ET hive.exec.max.dynamic.partitions.pernode=256;
+     Hive enforces a limit on the number of dynamic partitions it can create. 
+     The default is 100 dynamic partitions per node, with a total (default) limit of 1000 dynamic partitions across all nodes.
+     However, this setting is configurable. If your job tries to create more partitions than allowed, you may see the following exception:
 
 
  
