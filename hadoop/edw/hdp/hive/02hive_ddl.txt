@@ -306,6 +306,14 @@ TBLPROPERTIES (
   'transient_lastDdlTime'='1480879271')
 Time taken: 0.277 seconds, Fetched: 15 row(s)
 
+--- creating transaction aware table.
+
+create table hive_transactions(i int, j string)
+ clustered by (i) into 4 buckets
+ stored as orc
+ tblproperties('transactional'='true');
+ 
+ 
 
 
 
