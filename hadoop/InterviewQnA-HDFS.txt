@@ -25,3 +25,8 @@ Imp QnA
         Hadoop job - list
         Hadoop job - kill jobID
 
+04. Difference between Block vs Split.
+    http://stackoverflow.com/questions/30549261/split-size-vs-block-size-in-hadoop
+
+05. 
+
