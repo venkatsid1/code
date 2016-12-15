@@ -47,7 +47,7 @@ copying schema to other cluster ??
     mysql -u hive -p -e " select concat(  'show create table ' , TBL_NAME,';') from TBLS" hive > file.sql
     
 what are challenges you have faced in hive on your data ?
-  1. unit date to hive representation
+  1. unix date to hive representation
   2. Null presentations
   3. load issue to AWS S3 ?
      only external table is good. 
