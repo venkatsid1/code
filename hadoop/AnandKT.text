@@ -134,9 +134,11 @@ Project --- QnA
 	    i. view
 	    ii. click    20 GB
 	    iii. Activity  1GB
-	 Are we placing plain text data into the HDFS or compress data? Spark(1.1)/scala, MR, Pig, Hive has capability to deal with compressed/zip blocks????
+	 Are we placing plain text data into the HDFS or compress data? 
+	 Spark(1.1)/scala, MR, Pig, Hive has capability to deal with compressed/zip blocks????
 	 Can we have sample goofed data for above scenarios?????
 	 
+	 http://support.sas.com/resources/papers/proceedings12/100-2012.pdf
 	 
    
 2. How it was received ? Who are the data providers?
@@ -159,4 +161,22 @@ Project --- QnA
 
 9. How were the validatuon rules applied in what platform?
 
+10. How we are processing click stream data using spark ?
+
+11. What are technical challenges you have faced in your project ?
+    a. Full Outer  joins  on Spark RDD and Hive ---  Issue is cluster hang. All resources are consumed (monitored on Job Server)
+       Any actions ??? shuffling .... usually we allocate 20% of capacity to for shuffling.
+       Shuffle area is getting utilized ... so running out of resources.
+       This is scenario will when dynamic allocation is set true/enabled.
+       i. Hive Map side (combiner) join helped in some sort in this scenario to recover from hung state.
+       ii. Skewness ??? 
+            Know the Executor capacity (memory and cores) . 
+	    solution: Re-partition in spark.  (DataNode === worker) 
+	              rdd.repartition(50)
+       
+	    
+       
+       
+
+12. 
 
