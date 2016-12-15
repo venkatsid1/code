@@ -19,6 +19,10 @@ Does Hive support indexing? How we can have faster searches?
      http://maheshwaranm.blogspot.com/2013/09/hive-indexing.html
       ex:  create INDEX test_column_index ON TABLE test_table(test_column) as
                  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  WITH DEFERRED REBUILD;
+                 
+Two possible ways of importing into Hive? 
+  http://getindata.com/blog/post/surprising-sqoop-to-hive-gotchas/
+  
 
 How do we choose between partition vs bucketing ?
 
