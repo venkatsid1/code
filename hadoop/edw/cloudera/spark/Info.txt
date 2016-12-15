@@ -9,6 +9,12 @@ http://media.sundog-soft.com/SparkScala/SparkScala.zip  --- scala samples  from 
 Q&A
 =========
 
+01. Which Storage Level to Choose?
+     http://spark.apache.org/docs/latest/programming-guide.html#which-storage-level-to-choose
+
+02. Spark - repartition() vs coalesce()
+     http://stackoverflow.com/questions/31610971/spark-repartition-vs-coalesce
+03. 
 
 Key Points & Buzz words
 =====================
