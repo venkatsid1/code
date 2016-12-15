@@ -21,4 +21,7 @@ Imp QnA
     $ hadoop distcp s3n://accessKeyid:secretkey@bucket/file hdfs://CDH5-nameservice/bucket/file
     distcp will then submit a regular MapReduce job that performs a file-by-file copy.
 
-03. 
+03. How to List current jobs in the cluster and kill a job.
+        Hadoop job - list
+        Hadoop job - kill jobID
+
