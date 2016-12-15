@@ -32,8 +32,15 @@ can we create schema with primary key ?
 
 Static vs Dynamic Partitioning ?
   https://www.altiscale.com/blog/best-practices-for-dynamic-partitioning-in-hive/
+
+Difference between sort by Vs order by ?
+
+How are you going to kill the stuck jobs at reducers level ?
+
   
-  
+How many ways to get RDBMS data into HIVE? And pros n cons ?
+   http://getindata.com/blog/post/surprising-sqoop-to-hive-gotchas/
+   
 
 copying schema to other cluster ??
     https://community.hortonworks.com/questions/4496/how-to-migrate-hive-data-over-to-new-cluster.html
