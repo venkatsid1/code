@@ -1,5 +1,8 @@
 References:
 ================
+ http://getindata.com/blog/post/surprising-sqoop-to-hive-gotchas/
+ http://www.javatpoint.com/hive    --- In this URL they have given wide range of hadoop QnA
+ 
  
  
 Q&A
@@ -22,7 +25,8 @@ Does Hive support indexing? How we can have faster searches?
                  
 Two possible ways of importing into Hive? 
   http://getindata.com/blog/post/surprising-sqoop-to-hive-gotchas/
-  
+
+What is -direct option ? faster import ?
 
 How do we choose between partition vs bucketing ?
 
@@ -38,6 +42,9 @@ Static vs Dynamic Partitioning ?
   https://www.altiscale.com/blog/best-practices-for-dynamic-partitioning-in-hive/
 
 Difference between sort by Vs order by ?
+  http://www.javatpoint.com/hive-sort-by-order-by
+    sort by ---- is specific to the data in a reducer. If multiple reducers are used. The final out might not be fully sorted.
+    order by --- uses single reducer , thus guarantee total ordering of the data.
 
 How are you going to kill the stuck jobs at reducers level ?
 
