@@ -41,10 +41,14 @@ can we create schema with primary key ?
 Static vs Dynamic Partitioning ?
   https://www.altiscale.com/blog/best-practices-for-dynamic-partitioning-in-hive/
 
-Difference between sort by Vs order by ?
+Difference between SORT BY VS ORDER BY VS DISTRIBUTE BY VS CLUSTER BY
   http://www.javatpoint.com/hive-sort-by-order-by
     sort by ---- is specific to the data in a reducer. If multiple reducers are used. The final out might not be fully sorted.
     order by --- uses single reducer , thus guarantee total ordering of the data.
+    
+   http://saurzcode.in/2015/01/hive-sort-vs-order-vs-distribute-vs-cluster/
+   
+   
 
 How are you going to kill the stuck jobs at reducers level ?
 
