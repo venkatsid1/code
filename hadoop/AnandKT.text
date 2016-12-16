@@ -175,8 +175,13 @@ Project --- QnA
 	              rdd.repartition(50)
        
 	    
-       
-       
+     b. Hive queries where taking lot time for execution - high latency is observed when joins on large data was performed.
+        how do you observe high latency.
+	solution: Map side joins.
+     
+     c. compression techniques used ? and why ?
+        gzip , snappy
+	        
 
 12. 
 
