@@ -1,0 +1,20 @@
+Referrences
+=====================
+
+
+QnA  && Buzz words
+===============
+
+
+
+
+
+Concepts
+=================
+
+Bit Map Index Explained. Good for table with more reads less writes.
+     https://www.youtube.com/watch?v=Qb7cmGBSHXo
+     
+
+
+
