@@ -1,5 +1,9 @@
 Referrences
 =====================
+Nice video on RDBMS n Datawarehouse 
+     https://www.youtube.com/channel/UCTK8lcj1V09KjPA9tqutyLA
+     
+ 
 
 
 QnA  && Buzz words
@@ -14,6 +18,14 @@ Concepts
 
 Bit Map Index Explained. Good for table with more reads less writes.
      https://www.youtube.com/watch?v=Qb7cmGBSHXo
+     
+Cardinality = no of unique column values / no of total column values.     
+          1 is considered highest cardinal value.
+          Higher cardinality -->  use B-TREE
+          Lower Cardinatlity --> use Bit Map
+          https://www.youtube.com/watch?v=mAtaRAa7d-Q
+          
+
      
 
 
