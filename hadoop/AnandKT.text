@@ -4,6 +4,20 @@ IDAA Netteza  ---
 Log Master --- goes through log archieve  
 attunitty tool ---   check for new tool for web Interface.  http://www.attunity.com/
 
+Buzz words
+================
+Demographic data  --- Matching score --- Propensity model  --- 401 K Planning
+Click Stream Analysis --- ROI - Effective Marketting.
+Flagship programs
+Un-Adultrated Data (Cleaned Data) -- is stored in HIVE
+
+Staging --> ETL --> Archive --> Master
+
+Sknewness -- shuffle area issue ---- SOL :Map side joins ; repartitioning vs coalesce
+
+PROD - (30 Nodes - 3 masters)
+
+
 
 Project
 =================
