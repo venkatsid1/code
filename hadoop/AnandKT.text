@@ -19,7 +19,7 @@ Project
  Predictive models
     1. Clustered models-- (segmentation)
     2. Propensity models (predictions)
-	3. Collaborative filtering(Recomendation)
+    3. Collaborative filtering(Recomendation)
 	
  click stream analysis
   --- view event
