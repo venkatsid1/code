@@ -22,6 +22,8 @@ Does Hive support indexing? How we can have faster searches?
      http://maheshwaranm.blogspot.com/2013/09/hive-indexing.html
       ex:  create INDEX test_column_index ON TABLE test_table(test_column) as
                  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  WITH DEFERRED REBUILD;
+        
+        Compact Index seems to store (value, block-id) pairs while Bitmap Index stores (value , list of rows as a bitmap)
                  
 Two possible ways of importing into Hive? 
   http://getindata.com/blog/post/surprising-sqoop-to-hive-gotchas/
