@@ -4,7 +4,13 @@ References
 
 Buzz words
 ================
-
+Concurrent package
+copyonwrite  --- ???
+retainall , iterate ????
+recursion --- palindrome check ???
+hashtable vs concurrenthashmap. ??? concurrenthashmap is good.
+context switching -- threads ---
+OCP ---- Open for extension closed for modification....
 
 
 QnA
