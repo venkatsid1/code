@@ -4,11 +4,15 @@ IDAA Netteza  ---
 Log Master --- goes through log archieve  
 attunitty tool ---   check for new tool for web Interface.  http://www.attunity.com/
 
+
+
 Buzz words
 ================
-Demographic data  --- Matching score --- Propensity model  --- 401 K Planning
-Click Stream Analysis --- ROI - Effective Marketting.
-Flagship programs
+1. Demographic data  --- Matching score --- Propensity model  --- 401 K Planning -- Promote BOA Products 
+2. Click Stream Analysis --- ROI - Effective Marketting.
+
+Pickup issue of Wellsforgo --- fake accounts issue
+
 Un-Adultrated Data (Cleaned Data) -- is stored in HIVE
 
 Staging --> ETL --> Archive --> Master
@@ -17,6 +21,17 @@ Sknewness -- shuffle area issue ---- SOL :Map side joins ; repartitioning vs coa
 
 PROD - (30 Nodes - 3 masters)
 
+
+Control-M --> Oozie -- > oozie scheduler (Cordinator) --- cronjob  ;;;;  oozie bundle ??? related co-ordinator are bundled.
+                      ---> workflow 
+		      		-->sqoop (staging)
+				---> spark validation (clean and formatting,validation) Staging)
+				---> HIVE external tables  ( Before operationalize ) 
+				          --> ETL (avro)
+					  --> Master (parquet)
+				---> Archieving sqooped raw data.
+				
+                                 
 
 
 Project
@@ -195,8 +210,32 @@ Project --- QnA
 	solution: Map side joins.
      
      c. compression techniques used ? and why ?
-        gzip , snappy
+        using snappy --- 
+
+     d. spark action 1.3 did not work with oozie... but worked with 1.6.
+	
+	
 	        
 
-12. 
+12.  CDC - Capture Data Change --- realtime data.
+	- Flume , Kafka ....
+
+13.  Oozie - decision node  -- switch case --
+
+14. Build process
+     -- maven builds in jenkin ---- tar file with multiple jars --> nexus repo --> 
+       ----> control M job ---> mention which version of tar file ---> pulls to edge node from repo.
+       ---> assembly/assembly.xml  which is part of maven.
+       ---> unit tests in scala, 
+       ---> spark UDFs .....
+ 15. 
+ 
+ 16. 
+ 
+ 17. 
+ 
+ 
+ 
+       
+       
 
