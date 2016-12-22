@@ -1,0 +1,12 @@
+## Few useful commands
+# Adding all local files to git local
+git add - A
+
+# committing to local repo
+git commit -m "added: .gitignore"
+
+# pushing the local committed files to remote repo, by mentioning the remote repo.
+git remote add origin git@github.com:jdarshanam/java.git
+
+
+
