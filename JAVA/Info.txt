@@ -1,0 +1,16 @@
+References
+===================
+
+
+
+
+QnA
+======================
+01. How do you achieve performance in different layers of application.
+02. How do you predict heap size of an application.
+03. Tools used for memory dump 
+04. ThreadLocalRandom vs Math.random
+05. Garbage Collection
+06. Race condition vs dead lock.
+07. What is public or private synonym
+08. 
