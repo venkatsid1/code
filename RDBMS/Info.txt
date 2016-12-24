@@ -8,8 +8,11 @@ Nice video on RDBMS n Datawarehouse
 
 QnA  && Buzz words
 ===============
-
-
+01. Transaction management 
+02. XA and non-XA difference
+03. Context switch in terms of stored procedures --- sql and procedure parsers.
+04. View and Materialized view
+05. 
 
 
 
