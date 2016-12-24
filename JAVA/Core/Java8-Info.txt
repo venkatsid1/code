@@ -1,0 +1,24 @@
+References
+===========================
+
+
+
+
+Buzz words
+====================
+
+
+
+
+QnA
+=================
+
+
+
+
+Concepts
+===================
+Java 8 Features
+  Default Methods in interfaces
+  Lambda
+  
