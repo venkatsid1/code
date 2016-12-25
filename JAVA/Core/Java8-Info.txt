@@ -1,5 +1,8 @@
 References
 ===========================
+http://www.vogella.com/tutorials/JavaConcurrency/article.html
+http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/
+http://winterbe.com/posts/2014/03/16/java-8-tutorial/
 
 
 
@@ -21,4 +24,34 @@ Concepts
 Java 8 Features
   Default Methods in interfaces
   Lambda
+  
+1. Concurrency
+1.1. What is concurrency?
+1.2. Process vs. threads
+2. Improvements and issues with concurrency
+2.1. Limits of concurrency gains
+2.2. Concurrency issues
+3. Concurrency in Java
+3.1. Processes and Threads
+3.2. Locks and thread synchronization
+3.3. Volatile
+4. The Java memory model
+4.1. Overview
+4.2. Atomic operation
+4.3. Memory updates in synchronized code
+5. Immutability and Defensive Copies
+5.1. Immutability
+5.2. Defensive Copies
+6. Threads in Java
+7. Threads pools with the Executor Framework
+8. Futures and Callables
+8.1. Futures and Callables
+8.2. Drawbacks with Futures and Callbacks
+9. CompletableFuture
+10. Nonblocking algorithms
+11. Fork-Join in Java 7
+12. Deadlock
+13. About this website
+14. Links and Literature
+14.1. Concurrency Resources
   
