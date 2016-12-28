@@ -3,6 +3,9 @@ References
 Big O Notation
 https://www.youtube.com/watch?v=v4cd1O4zkGw
 
+Binary Search
+http://cs.utsa.edu/~wagner/CS3343/recursion/binsearch.html
+
 
 
 QnA
@@ -12,3 +15,11 @@ QnA
 
 Concepts
 ==============
+Time complexity
+O(1) ---> static
+O(log N) --> Divide & Concur; Binary Search
+O(N) --->Directly or linearly linked with N
+O(N log N) --> Merge Search ; Deck of Cards
+O(N ^2 ) --> Checking List & Grocery Cart
+O(infinity) --> flipping a coin
+
