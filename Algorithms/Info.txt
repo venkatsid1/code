@@ -6,6 +6,8 @@ https://www.youtube.com/watch?v=v4cd1O4zkGw
 Binary Search
 http://cs.utsa.edu/~wagner/CS3343/recursion/binsearch.html
 
+Algorithms
+https://www.youtube.com/watch?v=f5OD9CKrZEw&list=PLGLfVvz_LVvReUrWr94U-ZMgjYTQ538nT
 
 
 QnA
