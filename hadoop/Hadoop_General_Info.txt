@@ -12,4 +12,24 @@ QnA
 
 
 
+Concepts
+=============
+File Compression
+	http://www.cloudera.com/documentation/enterprise/5-6-x/topics/admin_data_compression_performance.html
+    GZIP is uses more CPU resource than snappy and LZO which provides higher compression ratio.
+	GZIP is good for cold data. Snappy or LZO are good for hot data.
+	BZip2 provides more compression than GZIP for some type of files, but consume time while compress/decompress. HBase does not support BZip2
+	Snappy performs better than LZO (Developer needs to test and decide)
+	BZip2 and LZO are splittable. While Snappy and GZIP blocks are not splittable, but Snappy blocks inside container file formats like Avro and SequentialFile can be split.
+    Snappy is intended to be used inside Avro and SequentialFile.
+    MR can compress intermediate or output or both data.
+		hadoop jar hadoop-examples-.jar sort "-Dmapreduce.compress.map.output=true"
+		"-Dmapreduce.map.output.compression.codec=org.apache.hadoop.io.compress.GzipCodec"
+		"-Dmapreduce.output.compress=true"
+		"-Dmapreduce.output.compression.codec=org.apache.hadoop.io.compress.GzipCodec" -outKey
+		org.apache.hadoop.io.Text -outValue org.apache.hadoop.io.Text input output
+		
+File Compression explained good
+	http://www.conductor.com/nightlight/how-to-build-a-speedy-custom-compression-codec-for-hadoop/
+
 
