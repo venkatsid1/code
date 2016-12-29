@@ -1,0 +1,65 @@
+References
+==============================
+http://www.coderpanda.com/jms-tutorial/
+Asynchronous --- MessageListner -- http://www.coderpanda.com/jms-message-consumption-asynchronous-message-consumption-in-jms/
+
+
+QnA
+===============
+
+
+
+
+Concepts
+===================
+JMS Client 			- message producer or consumer
+Service Provider	- Messaging system which implements JMS interface. Open JMS , JBOSS Messaging, MQ Series, Active MQ
+Messages			- Objects used to communicate between clients.
+Administered Objects- These are two types of preconfigured objects
+	Connection factory  - Provides connection between JMS Client and Service Provider
+	Destination			- Is an Object into which JMS Client targets/receives its messages to and from.
+	
+	An administered tool binds the administered objects – Connection factories and destinations ,to the  JNDI name space. 
+	
+Native Client		- They message product native API instead of JMS API.
+	
+MESSAGING Domains
+	Point - to - Point
+		One sender, One Queue , one receiver
+	Publish / Subscribe
+		Client subscription to the TOPIC required.
+		Client should be active to receive messages
+		
+
+		
+Building Blocks
+	Administered Objects --- connection factories and destinations
+	JNDI look up
+	Session - Single threaded context for Producing and Consuming messages
+	Message Producer - Created from Session
+	Message Consumer - Created from Session
+	Message Selector - To filter messages received
+	Message 		 - Object targeted to topic/queue and has 3 parts
+		header		- predefined fields for proper delivery and routing
+		body		- body of messages. 5 types allowed by JMS API.
+			Text Message	- String data
+			Byte Message	- byte data
+			Map Message		- key/value
+			Stream Message	- Stream of primitive values
+			Object Message	- body contains Object
+			Message			- Nothing in the body. Only has header.
+		properties	- additional properties other than header.
+		
+RELIABILITY MECHANISM IN JMS
+	Specifying message persistence			- Message persisted in the case of failure of JMS Provider. send() / publish()
+		Persistence Delivery mode - Default - DeliveryMode.PERSISTENCE = 2
+		Non-Persistence Delivery mode - NON_DeliveryMode.PERSISTENCE = 1
+	Setting Message Priority Levels			- Message with Higher priority levels will be delivered first. 0 to 9 . Default is 4.
+	Allow Message to expire					- Message with expiration time. Default message never expires.
+	Controlling Message Acknowledgements	- Can make various levels of control over ACK of messages.
+	Creating Temporary Destinations			- Created in programs. Message reliability is still assured.
+	Creating Durable Subscription			- Message is still would be sustained even if the subscriber is inactive.
+	
+Synchronous   
+	
+	
