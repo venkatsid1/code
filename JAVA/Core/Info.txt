@@ -12,6 +12,19 @@ hashtable vs concurrenthashmap. ??? concurrenthashmap is good.
 context switching -- threads ---
 OCP ---- Open for extension closed for modification....
 
+invokedynamic
+
+static block in  inner class ???
+
+enum explicit initialize ????
+
+
+refiable type ???/
+
+
+heap pollution ???
+
+
 
 QnA
 ======================
