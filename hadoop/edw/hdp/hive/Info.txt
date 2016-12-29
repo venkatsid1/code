@@ -57,11 +57,6 @@ Difference between SORT BY VS ORDER BY VS DISTRIBUTE BY VS CLUSTER BY
     order by --- uses single reducer , thus guarantee total ordering of the data.
     
    http://saurzcode.in/2015/01/hive-sort-vs-order-vs-distribute-vs-cluster/
-   
-   
-
-How are you going to kill the stuck jobs at reducers level ?
-
   
 How many ways to get RDBMS data into HIVE? And pros n cons ?
    http://getindata.com/blog/post/surprising-sqoop-to-hive-gotchas/
@@ -112,8 +107,12 @@ explain ... query --- gives information about the stages and map and reduce task
 
 hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
 
-To have transation behavior table needs to be orc , bucketing ,  tblproperties('transactional'='true'); 
-compaction
+Hive Transaction    ---  https://cwiki.apache.org/confluence/display/Hive/Hive+Transactions
+     To have transational behavior table needs to be orc , bucketing ,  tblproperties('transactional'='true'); 
+Compactor
+    Compactor is a set of background processes running inside the Metastore to support ACID system.  
+    It consists of Initiator, Worker, Cleaner, AcidHouseKeeperService and a few others.
+
 
 tombstone
 Vaccuming
