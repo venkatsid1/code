@@ -1,0 +1,59 @@
+References
+====================
+http://www.tutorialspoint.com/spring/spring_applicationcontext_container.htm 	
+http://www.javacodegeeks.com/2014/05/spring-interview-questions-and-answers.html
+
+
+
+QnA
+=============
+
+
+
+
+Concepts
+========================
+IOC or Dependency Injection
+	Inversion of Control (IOC) and Dependency Injection (DI) are used interchangeably. IOC is achieved through DI. 
+	DI is the process of providing the dependencies and IOC is the end result of DI.
+
+	By DI the responsibility of creating objects is shifted from our application code to Spring container hence the phenomenon is called IOC.
+
+	Dependency Injection can be done by setter injection, constructor injection.
+
+Life-Cycle
+	init-method     ===== InitializationBean --- afterProperties()
+	destroy-method  =====  DisposableBean -- destroy()
+	
+	BeanPostProcessor
+	
+Bean-Scope
+	singleton
+	prototype
+	request
+	session
+	global-session
+	
+	
+AutoWiring
+	ByName
+	ByType
+	ByConstructor
+	AutoDetect
+	
+Anotations
+	@Required
+	@Autowired
+	@Qualifier
+	JSR 250 ---- @Resource , @PostConstruct, @PreDestroy
+	
+	@Configuration
+	@Bean
+
+	
+org.springframework.context.ApplicationContext
+	FileSystemXmlApplicationContext
+	ClasspathXmlApplicationContext
+	WebContextXmlApplocationContext
+	
+
