@@ -1,0 +1,19 @@
+References
+=================
+Hadoop Security
+	http://www.cloudera.com/documentation/enterprise/5-6-x/topics/sg_edh_overview.html
+
+
+
+QnA
+===========
+
+
+
+KeyWords and Concepts
+=======================
+Facets of Hadoop Security
+	Premier Security == Authentication , Network Isolation
+	Data Protection == Encryption  , Data Masking
+	Entitlements == Authorization  ,  Permissions
+	Transperancy == Auditing  , Lineage
