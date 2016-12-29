@@ -1,0 +1,104 @@
+References
+=======================
+http://addictedtojava.blogspot.com/2013/04/controllers-in-spring.html
+http://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm
+
+
+
+QnA
+==============
+
+
+
+
+
+Concepts
+=======================
+
+Request Process flow
+	Dispatcher Servlet
+		Handler Mapping
+		Controller
+		View Resolver
+		View
+
+<web-app >
+
+   <servlet>
+      <servlet-name>HelloWeb</servlet-name>
+      <servlet-class>
+         org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>HelloWeb</servlet-name>
+      <url-pattern>*.jsp</url-pattern>
+   </servlet-mapping>
+   
+  <context-param>
+   <param-name>contextConfigLocation</param-name>
+   <param-value>/WEB-INF/HelloWeb-servlet.xml</param-value>
+</context-param>
+
+<listener>
+   <listener-class>
+      org.springframework.web.context.ContextLoaderListener
+   </listener-class>
+</listener>
+
+</web-app>
+
+
+HelloWeb-Servlet.xml
+<beans >
+
+	<!-- @Controller and @RequestMapping are scanned and loaded -->
+   <context:component-scan base-package="com.tutorialspoint" /> 
+
+   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="prefix" value="/WEB-INF/jsp/" />
+      <property name="suffix" value=".jsp" />
+   </bean>
+
+</beans>
+
+@Controller
+@RequestMapping("/hello")
+public class HelloController{
+ 
+   @RequestMapping(method = RequestMethod.GET)
+   public String printHello(ModelMap model) {
+      model.addAttribute("message", "Hello Spring MVC Framework!");
+      return "hello";
+   }
+
+}
+
+hello.jsp
+<html>
+   <head>
+   <title>Hello Spring MVC</title>
+   </head>
+   <body>
+   <h2>${message}</h2>
+   </body>
+</html>
+
+
+
+DispatcherServlet acts as controller and it will call the methods of controller classes that we have defined.
+	AbstractController			- handleRequestInternal() 
+	AbstractCommandController
+	AbstractFormController
+	MultiActionController
+	SimpleFormController
+	AbstractWizardFormController
+
+	
+	
+	
+	
+	
+	
